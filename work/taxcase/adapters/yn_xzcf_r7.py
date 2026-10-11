@@ -32,7 +32,7 @@ TODAY = "2026-10-11"
 H = {"Referer": "https://yunnan.chinatax.gov.cn/pub/info?id=c22386b90f4b45fb8614d53c4e635ede&department=15300000000"}
 COLS = ["决定书文号", "案件名称", "处罚类别", "处罚事由", "处罚依据", "行政相对人名称",
         "行政相对人代码", "法定代表人姓名", "处罚结果", "处罚机关", "处罚日期"]
-MAX_PAGES = 115
+MAX_PAGES = 241  # r9 复跑：余量 116-241 页（2023-08→2024-10）
 
 
 def safe_fn(s, maxlen=70):
@@ -101,7 +101,9 @@ def main():
             except Exception:
                 pass
     n_ok = n_del = n_err = 0
-    for pn in range(1, MAX_PAGES + 1):
+    import os as _os
+    start_pn = int(_os.environ.get('YN_START_PAGE', '1'))
+    for pn in range(start_pn, MAX_PAGES + 1):
         time.sleep(1.8 + random.uniform(0, 1.0))
         try:
             html = fetch(pn)

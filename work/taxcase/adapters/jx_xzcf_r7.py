@@ -36,7 +36,7 @@ import openpyxl  # noqa: E402
 SITE = "https://jiangxi.chinatax.gov.cn"
 SEARCH = SITE + "/module/xxgk/search.jsp?infotypeId=&vc_title=&vc_number=&area=XZCFXXGS&divid=div1576&jdid=26&currpage={page}"
 DATE_FROM = "2023-01-01"
-CAP = 2000
+CAP = 6000  # r9 复跑：提量收 2023-01→2025-07 余量（原 2000 量控已解除）
 DELAY = 1.5
 
 LAWLIB = os.path.normpath(os.path.join(ROOT, "..", "..", "lawlibrary"))
