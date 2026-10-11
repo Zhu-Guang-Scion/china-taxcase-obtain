@@ -1,0 +1,16 @@
+# China_Law 工具链依赖（Python 3.11+）
+# 法规库 + 税务案例库通用
+requests>=2.31
+curl_cffi>=0.7          # 税务系统 TLS 指纹（chrome124 impersonate）——核心依赖
+beautifulsoup4>=4.12
+lxml>=4.9
+markdownify>=0.11       # HTML→Markdown
+openpyxl>=3.1           # 江西批次 xlsx / Excel 输出
+# 法规库专项
+python-docx>=1.1        # docx 解析/生成（.doc 老格式走本机 Word COM，仅 Windows）
+pycryptodome>=3.20      # 规章库 athenaappkey 本地 RSA 生成
+pymupdf>=1.24           # PDF 文本层提取
+# 可选
+# playwright>=1.44      # 瑞数/网宿墙会话内收割（playwright install chromium）
+# ddddocr>=1.5          # 图片验证码识别
+# pywin32               # Windows Word/Excel COM（.doc/.xls 老附件）

@@ -1,0 +1,41 @@
+# ===== 数据不分发（合规：本仓库只含代码/规则/元数据索引，不含文书原文） =====
+lawlibrary/*
+!lawlibrary/manifest.csv
+中国现行法律、法规、规章_*.zip
+法规目录索引/
+
+# ===== 运行时状态与过程数据 =====
+tmp/
+mirrors/
+work/downloads/
+work/lists/
+work/logs/
+work/verify/
+work/ima_dl/
+work/ima_upload/
+work/mineru_out/
+work/mineru_tmp/
+work/taxcase/tmp/
+work/taxcase/progress/
+work/taxcase/_wenshu_research/
+work/taxcase/pruned_files*.json
+work/taxcase/quality_report.json
+_research/probe_r5/
+work/flk_index.js
+work/gov_index.js
+work/gov_pub.js
+work/test_download.docx
+work/wzws_challenge.html
+work/wzws_script.js
+
+# ===== 环境 =====
+__pycache__/
+*.pyc
+.v2c/
+.video_agent/
+.DS_Store
+work/taxcase/*.out
+work/taxcase/*.html
+
+# ima 知识库上传系列（依赖仓库外私有工程与个人凭据，不随开源版分发）
+work/scripts/ima_*.py

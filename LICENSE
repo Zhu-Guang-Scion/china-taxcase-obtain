@@ -1,0 +1,28 @@
+MIT License
+
+Copyright (c) 2026 Zhu-Guang-Scion (github.com/Zhu-Guang-Scion) 及项目贡献者
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+附加声明（数据与内容边界）：
+- 本 MIT 许可仅覆盖本仓库中的**代码、脚本、规则与文档**（work/、_research/、README 等）。
+- `lawlibrary/` 下的法律法规与税务案例**数据文件不随本仓库分发**（仅保留 manifest.csv 元数据索引）；数据版权与公开属性归原发布机关所有，使用者应自行从官方渠道获取并遵守其使用条款。
+- 本仓库面向**政府信息公开栏目**的合规采集（低频、单线程、遵守站点策略）。文档中对部分站点验证机制的记录属技术调研性质，供理解采集边界之用；使用者应自行评估并遵守目标站点的服务条款与适用法律，作者不对使用方式承担责任。

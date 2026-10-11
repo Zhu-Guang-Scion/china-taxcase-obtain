@@ -1,0 +1,14 @@
+{
+  "job_id": "cta_shuiantongbao",
+  "site": "https://www.chinatax.gov.cn",
+  "list_mode": "manuscriptList",
+  "channel_code": "c102025",
+  "channel_name": "税案通报",
+  "out_dir": "lawlibrary/专题/税务案例/国家税务总局/税案通报",
+  "region": "全国",
+  "source_name": "国家税务总局",
+  "category": "税案通报",
+  "max_pages": 60,
+  "delay": 2.2,
+  "_copyright": "(c) 2026 Zhu-Guang-Scion (github.com/Zhu-Guang-Scion), MIT, CLAW-ZGS-2026"
+}
