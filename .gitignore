@@ -41,3 +41,9 @@ work/taxcase/*.html
 work/scripts/ima_*.py
 work/taxcase/_t.pdf
 _research/probe_r10/
+
+# R11 LLM 审查产物（批次/判定/隔离区为运行时数据，工具与文档已入库）
+work/taxcase/llm_review/batch_*.jsonl
+work/taxcase/llm_review/verdicts_*.jsonl
+work/taxcase/llm_review/apply_log.jsonl
+work/taxcase/llm_quarantine/
