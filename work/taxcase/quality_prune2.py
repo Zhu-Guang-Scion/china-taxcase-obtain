@@ -90,6 +90,18 @@ def decide(col, region, body):
         facts = section_text(body, ["主要违法事实", "违法事实", "案件事实"] + FACT_KWS)
         ok, why = facts_specific(facts)
         return ("KEEP" if ok else "DEL"), f"dishonesty({why})"
+    # 上市公司税务披露（交易所公告，R15）：公告标题即结果语义（收到决定书/补缴/保全），
+    # 补税公告用「补缴/补交/滞纳金」不在通用 OUTCOME_MARK——语义词单独判；
+    # 短公告正文整体即事实段（税要素+金额+有效中文字数），乱码件（老 PDF 无 ToUnicode）拦下
+    if "上市公司税务披露" in col:
+        flat = re.sub(r"\s", "", body)
+        has_tax = bool(re.search(r"税款|税额|滞纳金|罚款|增值税|消费税|所得税|营业税|附加税|印花税|房产税|土地增值税|税收保全|留抵|关税|资源税|环保税|契税|车船税|车辆购置税|税务|稽查|纳税|发票", flat))
+        # 金额形态：元/万元/亿元/外币/百分比/千分位逗号串（财务金额通式）
+        has_amt = bool(re.search(r"\d[\d,，.]*\s*[万亿]{0,2}(?:元|欧元|美元|港币)|\d+(?:\.\d+)?%|\d{1,3}(?:,\d{3})+", flat))
+        cjk = len(re.findall(r"[\u4e00-\u9fff]", flat))
+        mojibake = flat.count("\ufffd") * 10 > len(flat)
+        ok = not mojibake and has_tax and ((has_amt and cjk >= 60) or cjk >= 250)
+        return ("KEEP" if ok else "DEL"), "exchange-disclosure"
     # 处罚公示类（信用平台/省平台/决定书）：双要素
     facts = section_text(body, FACT_KWS)
     if not facts:  # 无明确事实节，看正文整体（某些源字段平铺）
