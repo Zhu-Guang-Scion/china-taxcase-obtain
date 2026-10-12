@@ -1,0 +1,64 @@
+{
+  "税务行政处罚决定书|无type": {
+    "total": 18,
+    "dist": {
+      "SH": 3,
+      "SZ": 14,
+      "other:00895": 1
+    }
+  },
+  "税务行政处罚决定书|type=shj": {
+    "total": 109,
+    "dist": {
+      "8xx(BJ/NEEQ)": 83,
+      "4xx(NEEQ老三板)": 7
+    }
+  },
+  "补缴税款|无type": {
+    "total": 233,
+    "dist": {
+      "SZ": 53,
+      "SH": 35,
+      "other:03678": 1,
+      "other:02465": 1
+    }
+  },
+  "补缴税款|type=shj": {
+    "total": 31,
+    "dist": {
+      "8xx(BJ/NEEQ)": 19,
+      "SZ": 11,
+      "SH": 1
+    }
+  },
+  "税务处罚|type=shj": {
+    "total": 137,
+    "dist": {
+      "8xx(BJ/NEEQ)": 84,
+      "4xx(NEEQ老三板)": 6
+    }
+  },
+  "税务处理决定书|type=shj": {
+    "total": 95,
+    "dist": {
+      "8xx(BJ/NEEQ)": 87,
+      "4xx(NEEQ老三板)": 3
+    }
+  },
+  "税务事项通知书|type=shj": {
+    "total": 18,
+    "dist": {
+      "8xx(BJ/NEEQ)": 13,
+      "SZ": 1,
+      "4xx(NEEQ老三板)": 3,
+      "SH": 1
+    }
+  },
+  "税收保全|type=shj": {
+    "total": 4,
+    "dist": {
+      "8xx(BJ/NEEQ)": 2,
+      "SH": 2
+    }
+  }
+}

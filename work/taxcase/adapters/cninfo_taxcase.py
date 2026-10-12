@@ -49,12 +49,17 @@ def mkt(code):
         return "上交所", "上海市"
     if code[:3] in ("000", "001", "002", "003", "300", "301", "200", "420"):
         return "深交所", "深圳市"
+    # 新三板/北交所（R16：子代理评估建议收，巨潮同源 type=shj 通道；北交所实测 0 命中合并处理）
+    if code[:2] in ("43", "83", "87", "92"):
+        return "股转系统", "全国"
     return None, None
 
-def _post_search(kw, pageNum):
+def _post_search(kw, pageNum, mtype=""):
     from curl_cffi import requests as cr
     payload = {"searchkey": kw, "sdate": "", "edate": "", "isfulltext": "false",
                "sortName": "pubdate", "sortType": "desc", "pageNum": pageNum}
+    if mtype:
+        payload["type"] = mtype
     r = cr.post(SEARCH_URL, data=payload, timeout=400, impersonate="chrome124", headers={
         "Referer": "http://www.cninfo.com.cn/new/fulltextSearch",
         "X-Requested-With": "XMLHttpRequest"})
@@ -62,25 +67,27 @@ def _post_search(kw, pageNum):
 
 def build_pool():
     pool = {}
-    for kw in KWS:
-        p, total = 1, None
-        while True:
-            try:
-                d = _post_search(kw, p)
-            except Exception as e:
-                print(f"  [{kw}] p{p} 失败: {e}"); time.sleep(5); continue
-            anns = d.get("announcements") or []
-            total = d.get("totalAnnouncement")
-            if not anns:
-                break
-            for a in anns:
-                pool[a["adjunctUrl"]] = a
-            if p * 10 >= total:
-                break
-            p += 1
+    # 双轮：无 type=沪深京主市场；type=shj=新三板/股转（R15 坑：type 会锁市场）
+    for mtype, tag in [("", "沪深"), ("shj", "股转")]:
+        for kw in KWS:
+            p, total = 1, None
+            while True:
+                try:
+                    d = _post_search(kw, p, mtype)
+                except Exception as e:
+                    print(f"  [{tag}][{kw}] p{p} 失败: {e}"); time.sleep(5); continue
+                anns = d.get("announcements") or []
+                total = d.get("totalAnnouncement")
+                if not anns:
+                    break
+                for a in anns:
+                    pool[a["adjunctUrl"]] = a
+                if p * 10 >= total:
+                    break
+                p += 1
+                time.sleep(1.4)
+            print(f"[{tag}][{kw}] total={total} 池累计={len(pool)}")
             time.sleep(1.4)
-        print(f"[{kw}] total={total} 池累计={len(pool)}")
-        time.sleep(1.4)
     rows = []
     for a in pool.values():
         title = re.sub(r"</?em>", "", a.get("announcementTitle") or "").strip()
@@ -89,7 +96,7 @@ def build_pool():
             continue
         ex, region = mkt(a.get("secCode"))
         if not ex:
-            continue  # 只要沪深两所
+            continue  # 沪深两所 + 股转系统
         rows.append({"code": a["secCode"], "name": a["secName"], "title": title,
                      "url": a["adjunctUrl"], "ts": a["announcementTime"],
                      "exchange": ex, "region": region})
