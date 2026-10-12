@@ -40,3 +40,4 @@ work/taxcase/*.html
 # ima 知识库上传系列（依赖仓库外私有工程与个人凭据，不随开源版分发）
 work/scripts/ima_*.py
 work/taxcase/_t.pdf
+_research/probe_r10/

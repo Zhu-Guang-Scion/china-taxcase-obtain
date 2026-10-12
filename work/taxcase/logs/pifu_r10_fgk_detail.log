@@ -1,0 +1,12 @@
+[run] fgk already done=0, to fetch=530
+[run] fgk 55/530 new=50 dup=0 skip=5 fail=0
+[run] fgk 106/530 new=100 dup=0 skip=6 fail=0
+[run] fgk 157/530 new=150 dup=0 skip=7 fail=0
+[run] fgk 208/530 new=200 dup=0 skip=8 fail=0
+[run] fgk 258/530 new=250 dup=0 skip=8 fail=0
+[run] fgk 308/530 new=300 dup=0 skip=8 fail=0
+[run] fgk 358/530 new=350 dup=0 skip=8 fail=0
+[run] fgk 408/530 new=400 dup=0 skip=8 fail=0
+[run] fgk 458/530 new=450 dup=0 skip=8 fail=0
+[run] fgk 508/530 new=500 dup=0 skip=8 fail=0
+[run] fgk DONE: new=522 dup=0 skip(低内容)=8 fail=0

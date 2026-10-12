@@ -1,0 +1,100 @@
+[list] cache loaded 4191 items
+[run:central] done=195 to_fetch=3996 (fgk_keys=530)
+E:\ai_coding_xiangmu\China_Law\work\taxcase\adapters\shui5_r10.py:360: FutureWarning: Possible nested set at position 9
+  s = re.sub(r"^[^〔\[]*[[〔(]\d{4}[]〕)]\d+号\s*", "", title)
+Traceback (most recent call last):
+  File "E:\ai_coding_xiangmu\China_Law\work\taxcase\adapters\shui5_r10.py", line 503, in <module>
+    main()
+  File "E:\ai_coding_xiangmu\China_Law\work\taxcase\adapters\shui5_r10.py", line 497, in main
+    run_details(s5, items, cap, args.mode)
+  File "E:\ai_coding_xiangmu\China_Law\work\taxcase\adapters\shui5_r10.py", line 422, in run_details
+    and ("批复" in title_base(it)
+                 ^^^^^^^^^^^^^^
+  File "E:\ai_coding_xiangmu\China_Law\work\taxcase\adapters\shui5_r10.py", line 360, in title_base
+    s = re.sub(r"^[^〔\[]*[[〔(]\d{4}[]〕)]\d+号\s*", "", title)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda3\Lib\re\__init__.py", line 185, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'dict'
+[list] cache loaded 4191 items
+[run:central] done=222 to_fetch=3969 (fgk_keys=530)
+E:\ai_coding_xiangmu\China_Law\work\taxcase\adapters\shui5_r10.py:360: FutureWarning: Possible nested set at position 9
+  s = re.sub(r"^[^〔\[]*[[〔(]\d{4}[]〕)]\d+号\s*", "", title)
+[run:central] 71/3969 new=50 dupF=16 dupS=0 skip=5
+[run:central] 133/3969 new=100 dupF=26 dupS=0 skip=7
+[run:central] 186/3969 new=150 dupF=27 dupS=0 skip=9
+[run:central] 243/3969 new=200 dupF=34 dupS=0 skip=9
+[run:central] 312/3969 new=250 dupF=52 dupS=1 skip=9
+[run:central] 377/3969 new=300 dupF=67 dupS=1 skip=9
+[run:central] 441/3969 new=350 dupF=81 dupS=1 skip=9
+[run:central] 499/3969 new=400 dupF=89 dupS=1 skip=9
+[run:central] 558/3969 new=450 dupF=98 dupS=1 skip=9
+[run:central] 613/3969 new=500 dupF=103 dupS=1 skip=9
+[run:central] 666/3969 new=550 dupF=106 dupS=1 skip=9
+[run:central] 719/3969 new=600 dupF=108 dupS=2 skip=9
+[run:central] 778/3969 new=650 dupF=117 dupS=2 skip=9
+[run:central] 836/3969 new=700 dupF=125 dupS=2 skip=9
+[run:central] 896/3969 new=750 dupF=135 dupS=2 skip=9
+[run:central] 958/3969 new=800 dupF=146 dupS=2 skip=10
+[run:central] 1014/3969 new=850 dupF=152 dupS=2 skip=10
+[list] cache loaded 4191 items
+[run:central] done=1287 to_fetch=2904 (fgk_keys=530)
+[run:central] 61/2904 new=50 dupF=11 dupS=0 skip=0
+[run:central] 118/2904 new=100 dupF=18 dupS=0 skip=0
+[run:central] 172/2904 new=150 dupF=22 dupS=0 skip=0
+[run:central] 224/2904 new=200 dupF=24 dupS=0 skip=0
+[run:central] 277/2904 new=250 dupF=27 dupS=0 skip=0
+[run:central] 334/2904 new=300 dupF=34 dupS=0 skip=0
+[run:central] 390/2904 new=350 dupF=40 dupS=0 skip=0
+[run:central] time limit 25.0min reached @ 422, stop
+[run:central] DONE new=377 dup_fgk=44 dup_self=0 skip=0
+[list] cache loaded 4191 items
+[run:central] done=1708 to_fetch=2483 (fgk_keys=530)
+[run:central] 51/2483 new=50 dupF=1 dupS=0 skip=0
+[run:central] 109/2483 new=100 dupF=8 dupS=1 skip=0
+[run:central] 165/2483 new=150 dupF=14 dupS=1 skip=0
+[run:central] 219/2483 new=200 dupF=18 dupS=1 skip=0
+[run:central] 269/2483 new=250 dupF=18 dupS=1 skip=0
+[run:central] 320/2483 new=300 dupF=19 dupS=1 skip=0
+[run:central] 371/2483 new=350 dupF=20 dupS=1 skip=0
+[run:central] time limit 25.0min reached @ 402, stop
+[run:central] DONE new=378 dup_fgk=22 dup_self=1 skip=0
+[list] cache loaded 4191 items
+[run:central] done=2109 to_fetch=2082 (fgk_keys=530)
+[run:central] 50/2082 new=50 dupF=0 dupS=0 skip=0
+[run:central] 104/2082 new=100 dupF=4 dupS=0 skip=0
+[run:central] 155/2082 new=150 dupF=5 dupS=0 skip=0
+[run:central] 208/2082 new=200 dupF=8 dupS=0 skip=0
+[run:central] 260/2082 new=250 dupF=10 dupS=0 skip=0
+[run:central] 316/2082 new=300 dupF=16 dupS=0 skip=0
+[run:central] 370/2082 new=350 dupF=20 dupS=0 skip=0
+[run:central] time limit 25.0min reached @ 402, stop
+[run:central] DONE new=378 dup_fgk=23 dup_self=0 skip=0
+[list] cache loaded 4191 items
+[run:central] done=2510 to_fetch=1681 (fgk_keys=530)
+[run:central] 50/1681 new=50 dupF=0 dupS=0 skip=0
+[run:central] 102/1681 new=100 dupF=2 dupS=0 skip=0
+[run:central] 153/1681 new=150 dupF=3 dupS=0 skip=0
+[run:central] 208/1681 new=200 dupF=8 dupS=0 skip=0
+[run:central] 263/1681 new=250 dupF=13 dupS=0 skip=0
+[run:central] 318/1681 new=300 dupF=18 dupS=0 skip=0
+[run:central] 371/1681 new=350 dupF=21 dupS=0 skip=0
+[run:central] time limit 25.0min reached @ 405, stop
+[run:central] DONE new=379 dup_fgk=25 dup_self=0 skip=0
+[list] cache loaded 4191 items
+[run:central] done=2914 to_fetch=1277 (fgk_keys=530)
+[run:central] 52/1277 new=50 dupF=2 dupS=0 skip=0
+[run:central] 106/1277 new=100 dupF=6 dupS=0 skip=0
+[run:central] 158/1277 new=150 dupF=8 dupS=0 skip=0
+[run:central] time limit 10.0min reached @ 160, stop
+[run:central] DONE new=151 dup_fgk=8 dup_self=0 skip=0
+[list] cache loaded 4191 items
+[run:central] done=3079 to_fetch=1112 (fgk_keys=530)
+[run:central] 52/1112 new=50 dupF=2 dupS=0 skip=0
+[run:central] 104/1112 new=100 dupF=4 dupS=0 skip=0
+[run:central] 157/1112 new=150 dupF=7 dupS=0 skip=0
+[run:central] 213/1112 new=200 dupF=13 dupS=0 skip=0
+[run:central] 267/1112 new=250 dupF=17 dupS=0 skip=0
+[run:central] 321/1112 new=300 dupF=21 dupS=0 skip=0
+[run:central] 374/1112 new=350 dupF=24 dupS=0 skip=0

@@ -1,0 +1,77 @@
+[p-list] 广东 page 10/188
+[p-list] 广东 page 20/188
+[p-list] 广东 page 30/188
+[p-list] 广东 stop @page 40 (5 页无 ≥2023 命中)
+Traceback (most recent call last):
+  File "E:\ai_coding_xiangmu\China_Law\work\taxcase\adapters\shui5_r10.py", line 508, in <module>
+    main()
+  File "E:\ai_coding_xiangmu\China_Law\work\taxcase\adapters\shui5_r10.py", line 495, in main
+    else enum_prov_lists(s5, cache, args.max or MAX_PROV))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ai_coding_xiangmu\China_Law\work\taxcase\adapters\shui5_r10.py", line 296, in enum_prov_lists
+    if not want_prov(org, dyear, it["title"]):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\ai_coding_xiangmu\China_Law\work\taxcase\adapters\shui5_r10.py", line 94, in want_prov
+    return bool(PROV_DOC_RE.match(org)) and year >= 2023
+                                            ^^^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'str' and 'int'
+[p-list] 广东 page 10/188
+[p-list] 广东 page 20/188
+[p-list] 广东 page 30/188
+[p-list] 广东 stop @page 40 (5 页无 ≥2023 命中)
+[p-list] 广东: pages_scanned≤188 items=1400 kept(2023+)=21
+[p-list] 江苏 page 10/80
+[p-list] 江苏 stop @page 18 (5 页无 ≥2023 命中)
+[p-list] 江苏: pages_scanned≤80 items=630 kept(2023+)=1
+[p-list] 浙江 page 10/119
+[p-list] 浙江 page 20/119
+[p-list] 浙江 stop @page 21 (5 页无 ≥2023 命中)
+[p-list] 浙江: pages_scanned≤119 items=735 kept(2023+)=3
+[p-list] 上海 page 10/99
+[p-list] 上海 page 20/99
+[p-list] 上海 stop @page 24 (5 页无 ≥2023 命中)
+[p-list] 上海: pages_scanned≤99 items=840 kept(2023+)=4
+[p-list] 北京 page 10/178
+[p-list] 北京 stop @page 18 (5 页无 ≥2023 命中)
+[p-list] 北京: pages_scanned≤178 items=630 kept(2023+)=0
+[p-list] prov kept total=29
+[run:prov] done=0 to_fetch=29 (fgk_keys=530)
+[run:prov] DONE new=29 dup_fgk=0 dup_self=0 skip=0
+[p-list] 广东 page 20/188
+[p-list] 广东 page 40/188
+[p-list] 广东 page 60/188
+[p-list] 广东 page 80/188
+[p-list] 广东 page 100/188
+[p-list] 广东 page 120/188
+[p-list] 广东 page 140/188
+[p-list] 广东 page 160/188
+[p-list] 广东 page 180/188
+[p-list] 广东: pages≤188 items=6550 kept(2023+)=21
+[p-list] 江苏 page 20/80
+[p-list] 江苏 page 40/80
+[p-list] 江苏 page 60/80
+[p-list] 江苏 page 80/80
+[p-list] 江苏: pages≤80 items=2779 kept(2023+)=1
+[p-list] 浙江 page 20/119
+[p-list] 浙江 page 40/119
+[p-list] 浙江 page 60/119
+[p-list] 浙江 page 80/119
+[p-list] 浙江 page 100/119
+[p-list] 浙江: pages≤119 items=4160 kept(2023+)=3
+[p-list] 上海 page 20/99
+[p-list] 上海 page 40/99
+[p-list] 上海 page 60/99
+[p-list] 上海 page 80/99
+[p-list] 上海: pages≤99 items=3454 kept(2023+)=4
+[p-list] 北京 page 20/178
+[p-list] 北京 page 40/178
+[p-list] 北京 page 60/178
+[p-list] 北京 page 80/178
+[p-list] 北京 page 100/178
+[p-list] 北京 page 120/178
+[p-list] 北京 page 140/178
+[p-list] 北京 page 160/178
+[p-list] 北京: pages≤178 items=6196 kept(2023+)=0
+[p-list] prov kept total=29
+[run:prov] done=29 to_fetch=0 (fgk_keys=530)
+[run:prov] DONE new=0 dup_fgk=0 dup_self=0 skip=0
