@@ -1,6 +1,9 @@
 # ===== 数据不分发（合规：本仓库只含代码/规则/元数据索引，不含文书原文） =====
-lawlibrary/*
-!lawlibrary/manifest.csv
+# 只放行各级 manifest.csv 索引：先整树排除，再恢复目录（git 无法重包含被排除目录内的文件），
+# 最后逐层点名 manifest。taxcase_corpus/structured.jsonl 与全部 md/原文仍被排除。
+lawlibrary/**
+!lawlibrary/**/
+!lawlibrary/**/manifest.csv
 中国现行法律、法规、规章_*.zip
 法规目录索引/
 
