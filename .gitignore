@@ -50,3 +50,9 @@ work/taxcase/llm_review/batch_*.jsonl
 work/taxcase/llm_review/verdicts_*.jsonl
 work/taxcase/llm_review/apply_log.jsonl
 work/taxcase/llm_quarantine/
+
+# 单独授权信源（私人账号/商业数据库授权，与本项目开源范围无关）：
+# 其调研资料、样本与采集脚本一律本地存放，不入公开仓库
+work/taxcase/taxhu/
+_research/*.py
+_research/*.html
